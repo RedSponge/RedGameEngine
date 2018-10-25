@@ -1,4 +1,5 @@
 ﻿using RedGameEngine.World;
+using System.Windows.Forms;
 
 namespace WindowsFormsApp1
 {
@@ -15,6 +16,10 @@ namespace WindowsFormsApp1
         {
             vy += 0.1f;
             PosY += vy;
+            if (KeyInput.IsReleased(Keys.Space))
+            {
+                vy = -5;
+            }
         }
     }
 }

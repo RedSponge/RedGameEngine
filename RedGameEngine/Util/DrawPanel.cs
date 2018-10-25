@@ -8,15 +8,15 @@ using System.Windows.Forms;
 
 namespace RedGameEngine.Util
 {
-    public class DrawPanel : Panel
+    internal class DrawPanel : Panel
     {
         public DrawPanel(int width, int height)
         {
             this.Size = new Size(width, height);
             this.SetStyle(
-                System.Windows.Forms.ControlStyles.UserPaint |
-                System.Windows.Forms.ControlStyles.AllPaintingInWmPaint |
-                System.Windows.Forms.ControlStyles.OptimizedDoubleBuffer,
+                ControlStyles.UserPaint |
+                ControlStyles.AllPaintingInWmPaint |
+                ControlStyles.OptimizedDoubleBuffer,
                 true);
             this.Location = new Point(0, 0);
         }

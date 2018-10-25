@@ -1,17 +1,9 @@
 ﻿using RedGameEngine.World;
 using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Drawing;
 using System.Threading;
-using System.Diagnostics;
-using System.Reflection;
-
-using System.Runtime.InteropServices;
-using RedGameEngine.Util;
+ using RedGameEngine.Util;
 
 namespace RedGameEngine
 {
@@ -62,7 +54,7 @@ namespace RedGameEngine
 
         public void CreatePlayer(WorldPlayer player)
         {
-            player.KeyHandler = KeyHandler;
+            player.KeyInput = KeyHandler;
             worldManager.SetPlayer(player);
         }
 
@@ -115,6 +107,7 @@ namespace RedGameEngine
         private void Tick()
         {
             worldManager.Tick();
+            KeyHandler.Tick();
         }
 
         private void Render()

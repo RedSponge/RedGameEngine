@@ -4,3 +4,9 @@ E:\EranDesk\Turn Off\Code\Workspaces\C#\RedGameEngine\RedGameEngine\obj\Debug\Re
 E:\EranDesk\Turn Off\Code\Workspaces\C#\RedGameEngine\RedGameEngine\obj\Debug\RedGameEngine.csproj.CoreCompileInputs.cache
 E:\EranDesk\Turn Off\Code\Workspaces\C#\RedGameEngine\RedGameEngine\obj\Debug\RedGameEngine.dll
 E:\EranDesk\Turn Off\Code\Workspaces\C#\RedGameEngine\RedGameEngine\obj\Debug\RedGameEngine.pdb
+c:\users\redsponge\source\repos\WindowsFormsApp1\RedGameEngine\bin\Debug\RedGameEngine.dll
+c:\users\redsponge\source\repos\WindowsFormsApp1\RedGameEngine\bin\Debug\RedGameEngine.pdb
+c:\users\redsponge\source\repos\WindowsFormsApp1\RedGameEngine\obj\Debug\RedGameEngine.csprojAssemblyReference.cache
+c:\users\redsponge\source\repos\WindowsFormsApp1\RedGameEngine\obj\Debug\RedGameEngine.csproj.CoreCompileInputs.cache
+c:\users\redsponge\source\repos\WindowsFormsApp1\RedGameEngine\obj\Debug\RedGameEngine.dll
+c:\users\redsponge\source\repos\WindowsFormsApp1\RedGameEngine\obj\Debug\RedGameEngine.pdb

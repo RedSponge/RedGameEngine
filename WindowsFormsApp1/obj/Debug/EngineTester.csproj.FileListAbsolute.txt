@@ -11,3 +11,16 @@ E:\EranDesk\Turn Off\Code\Workspaces\C#\RedGameEngine\WindowsFormsApp1\obj\Debug
 E:\EranDesk\Turn Off\Code\Workspaces\C#\RedGameEngine\WindowsFormsApp1\obj\Debug\EngineTester.csproj.CopyComplete
 E:\EranDesk\Turn Off\Code\Workspaces\C#\RedGameEngine\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.exe
 E:\EranDesk\Turn Off\Code\Workspaces\C#\RedGameEngine\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.pdb
+c:\users\redsponge\source\repos\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\EngineTester.csprojAssemblyReference.cache
+c:\users\redsponge\source\repos\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Form1.resources
+c:\users\redsponge\source\repos\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Properties.Resources.resources
+c:\users\redsponge\source\repos\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\EngineTester.csproj.GenerateResource.cache
+c:\users\redsponge\source\repos\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\EngineTester.csproj.CoreCompileInputs.cache
+c:\users\redsponge\source\repos\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.exe
+c:\users\redsponge\source\repos\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.pdb
+c:\users\redsponge\source\repos\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\WindowsFormsApp1.exe.config
+c:\users\redsponge\source\repos\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\WindowsFormsApp1.exe
+c:\users\redsponge\source\repos\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\WindowsFormsApp1.pdb
+c:\users\redsponge\source\repos\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\RedGameEngine.dll
+c:\users\redsponge\source\repos\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\RedGameEngine.pdb
+c:\users\redsponge\source\repos\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\EngineTester.csproj.CopyComplete

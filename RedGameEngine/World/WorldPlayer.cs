@@ -13,7 +13,7 @@ namespace RedGameEngine.World
     public abstract class WorldPlayer : WorldEntity
     {
         public readonly Dictionary<Type, MethodInfo> actions;
-        public KeyHandler KeyHandler;
+        public KeyHandler KeyInput;
 
         public WorldPlayer(WorldManager worldIn=null) : base(worldIn)
         {
