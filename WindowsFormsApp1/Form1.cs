@@ -22,9 +22,6 @@ namespace WindowsFormsApp1
         {
             GameEngine engine = this;
 
-            Bru
-
-
         }
     }
 }
