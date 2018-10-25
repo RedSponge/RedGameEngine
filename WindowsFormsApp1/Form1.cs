@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using RedGameEngine;
+using RedGameEngine.World;
 
 namespace WindowsFormsApp1
 {
@@ -18,10 +19,16 @@ namespace WindowsFormsApp1
             InitializeComponent();
         }
 
-        private void Form1_Load(object sender, EventArgs e)
-        {
-            GameEngine engine = this;
+        private GameEngine engine;
 
+        public void Form1_Load(object sender, EventArgs args)
+        {
+            engine = new GameEngine(this);
+            engine.CreatePlayer(new SuperPlayer());
+
+
+            engine.Start();
         }
     }
+        
 }

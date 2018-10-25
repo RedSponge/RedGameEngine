@@ -1,0 +1,6 @@
+E:\EranDesk\Turn Off\Code\Workspaces\C#\RedGameEngine\RedGameEngine\bin\Debug\RedGameEngine.dll
+E:\EranDesk\Turn Off\Code\Workspaces\C#\RedGameEngine\RedGameEngine\bin\Debug\RedGameEngine.pdb
+E:\EranDesk\Turn Off\Code\Workspaces\C#\RedGameEngine\RedGameEngine\obj\Debug\RedGameEngine.csprojAssemblyReference.cache
+E:\EranDesk\Turn Off\Code\Workspaces\C#\RedGameEngine\RedGameEngine\obj\Debug\RedGameEngine.csproj.CoreCompileInputs.cache
+E:\EranDesk\Turn Off\Code\Workspaces\C#\RedGameEngine\RedGameEngine\obj\Debug\RedGameEngine.dll
+E:\EranDesk\Turn Off\Code\Workspaces\C#\RedGameEngine\RedGameEngine\obj\Debug\RedGameEngine.pdb

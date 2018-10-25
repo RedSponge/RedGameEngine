@@ -45,8 +45,14 @@
   <ItemGroup>
     <Compile Include="GameEngine.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Util\DrawPanel.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Util\KeyHandler.cs" />
+    <Compile Include="World\InteractionAttribute.cs" />
     <Compile Include="World\WorldEntity.cs" />
     <Compile Include="World\WorldManager.cs" />
+    <Compile Include="World\WorldPlayer.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

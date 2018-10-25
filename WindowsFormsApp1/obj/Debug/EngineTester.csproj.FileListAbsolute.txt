@@ -1,0 +1,13 @@
+E:\EranDesk\Turn Off\Code\Workspaces\C#\RedGameEngine\WindowsFormsApp1\bin\Debug\WindowsFormsApp1.exe.config
+E:\EranDesk\Turn Off\Code\Workspaces\C#\RedGameEngine\WindowsFormsApp1\bin\Debug\WindowsFormsApp1.exe
+E:\EranDesk\Turn Off\Code\Workspaces\C#\RedGameEngine\WindowsFormsApp1\bin\Debug\WindowsFormsApp1.pdb
+E:\EranDesk\Turn Off\Code\Workspaces\C#\RedGameEngine\WindowsFormsApp1\bin\Debug\RedGameEngine.dll
+E:\EranDesk\Turn Off\Code\Workspaces\C#\RedGameEngine\WindowsFormsApp1\bin\Debug\RedGameEngine.pdb
+E:\EranDesk\Turn Off\Code\Workspaces\C#\RedGameEngine\WindowsFormsApp1\obj\Debug\EngineTester.csprojAssemblyReference.cache
+E:\EranDesk\Turn Off\Code\Workspaces\C#\RedGameEngine\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Form1.resources
+E:\EranDesk\Turn Off\Code\Workspaces\C#\RedGameEngine\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Properties.Resources.resources
+E:\EranDesk\Turn Off\Code\Workspaces\C#\RedGameEngine\WindowsFormsApp1\obj\Debug\EngineTester.csproj.GenerateResource.cache
+E:\EranDesk\Turn Off\Code\Workspaces\C#\RedGameEngine\WindowsFormsApp1\obj\Debug\EngineTester.csproj.CoreCompileInputs.cache
+E:\EranDesk\Turn Off\Code\Workspaces\C#\RedGameEngine\WindowsFormsApp1\obj\Debug\EngineTester.csproj.CopyComplete
+E:\EranDesk\Turn Off\Code\Workspaces\C#\RedGameEngine\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.exe
+E:\EranDesk\Turn Off\Code\Workspaces\C#\RedGameEngine\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.pdb

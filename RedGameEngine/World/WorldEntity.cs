@@ -10,7 +10,7 @@ namespace RedGameEngine.World
 {
     public abstract class WorldEntity
     {
-        protected WorldManager WorldIn;
+        internal WorldManager WorldIn;
         public float PosX { protected set; get; }
         public float PosY { protected set; get; }
         public float Width { protected set; get; }
@@ -18,7 +18,8 @@ namespace RedGameEngine.World
 
         private readonly Brush representingBrush;
 
-        public WorldEntity(WorldManager worldIn)
+
+        public WorldEntity(WorldManager worldIn = null)
         {
             WorldIn = worldIn;
             PosX = PosY = 0;
@@ -33,7 +34,7 @@ namespace RedGameEngine.World
             g.FillRectangle(representingBrush, PosX, PosY, Width, Height);
         }
 
-        public Color GetRepesentingColor()
+        public virtual Color GetRepesentingColor()
         {
             return Color.Black;
         }

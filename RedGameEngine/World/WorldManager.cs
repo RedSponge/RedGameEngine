@@ -1,23 +1,62 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Forms;
 
 namespace RedGameEngine.World
 {
     public class WorldManager
     {
+        private GameEngine engine;
+
         private List<WorldEntity> entities;
+        private WorldPlayer player;
 
-        public void Tick(object sender, EventArgs args)
+        public WorldManager(GameEngine engine)
         {
-
+            this.engine = engine;
+            this.player = null;
+            this.entities = new List<WorldEntity>();
         }
 
-        public void Render(object sender, EventArgs args)
+        public void SetPlayer(WorldPlayer player) // A Player.
         {
+            player.WorldIn = this;
+            this.player = player;
+        }
 
+        public void AddEntity(WorldEntity entity)
+        {
+            entity.WorldIn = this;
+            this.entities.Add(entity);
+        }
+
+
+        // Tick and Render
+        public void Tick()
+        {
+            if(player == null)
+            {
+                throw new Exception("Player Not Defined! Use Engine.SetPlayer to set a player!");
+            }
+            player.Update();
+            entities.ForEach(e => {
+                e.Update();
+                player.InteractWith(e);
+            });
+        }
+
+        public void Render(Graphics g)
+        {
+            if(player == null)
+            {
+                return;
+            }
+            player.Render(g);
+            entities.ForEach(e => e.Render(g));
         }
     }
 }
