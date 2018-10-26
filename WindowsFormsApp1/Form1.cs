@@ -9,8 +9,8 @@ namespace WindowsFormsApp1
         public Form1()
         {
             InitializeComponent();
-        }
 
+        }
         private GameEngine engine;
 
         public void Form1_Load(object sender, EventArgs args)
@@ -18,14 +18,22 @@ namespace WindowsFormsApp1
             i = 0;
 
             engine = new GameEngine(this);
-            engine.CreatePlayer(new SuperPlayer());
+            player = new SuperPlayer();
+            engine.SetPlayer(player);
 
-            engine.AddTickMethod(SpawnerTick, TickPriority.BEFORE_LOGIC);
+            engine.AddTickMethod(SpawnerTick, TickSchedule.BEFORE_LOGIC);
+            engine.AddTickMethod(EngineEnder, TickSchedule.AFTER_RENDER);
 
             engine.Start();
         }
 
         private int i;
+        private SuperPlayer player;
+        public void EngineEnder()
+        {
+            if (player.dead) engine.Stop();
+        }
+
         public void SpawnerTick()
         {
             i++;

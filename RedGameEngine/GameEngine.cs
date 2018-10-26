@@ -21,7 +21,7 @@ namespace RedGameEngine
         private readonly Font fpsFont = new Font("Courier", 20);
 
         private KeyHandler KeyHandler;
-        private Dictionary<TickPriority, List<Action>> ticks;
+        private Dictionary<TickSchedule, List<Action>> ticks;
 
         public void AddEntity(WorldEntity entity)
         {
@@ -57,14 +57,14 @@ namespace RedGameEngine
 
 
 
-            ticks = new Dictionary<TickPriority, List<Action>>();
-            foreach(TickPriority t in Enum.GetValues(typeof(TickPriority)))
+            ticks = new Dictionary<TickSchedule, List<Action>>();
+            foreach(TickSchedule t in Enum.GetValues(typeof(TickSchedule)))
             {
                 ticks[t] = new List<Action>();
             }
         }
 
-        public void CreatePlayer(WorldPlayer player)
+        public void SetPlayer(WorldPlayer player)
         {
             player.KeyInput = KeyHandler;
             worldManager.SetPlayer(player);
@@ -115,22 +115,22 @@ namespace RedGameEngine
             }
         }
 
-        public void AddTickMethod(Action tick, TickPriority priority)
+        public void AddTickMethod(Action tick, TickSchedule priority)
         {
             ticks[priority].Add(tick);
         }
 
         private void Tick()
         {
-            ticks[TickPriority.BEFORE_LOGIC].ForEach((a) => a.Invoke());
+            ticks[TickSchedule.BEFORE_LOGIC].ForEach((a) => a.Invoke());
 
             worldManager.Tick();
 
-            ticks[TickPriority.BEFORE_INPUT].ForEach((a) => a.Invoke());
+            ticks[TickSchedule.BEFORE_INPUT].ForEach((a) => a.Invoke());
 
             KeyHandler.Tick();
 
-            ticks[TickPriority.AFTER_INPUT].ForEach((a) => a.Invoke());
+            ticks[TickSchedule.AFTER_INPUT].ForEach((a) => a.Invoke());
         }
 
         private void Render()
@@ -138,12 +138,12 @@ namespace RedGameEngine
             g.Clear(Form.BackColor);
             worldManager.Render(g);
             //g.DrawString("" + this.fps, fpsFont, Brushes.Black, 100, 100);
-            ticks[TickPriority.AFTER_RENDER].ForEach((a) => a.Invoke());
+            ticks[TickSchedule.AFTER_RENDER].ForEach((a) => a.Invoke());
         }
     }
 
 
-    public enum TickPriority
+    public enum TickSchedule
     {
         BEFORE_LOGIC,
         BEFORE_INPUT,
