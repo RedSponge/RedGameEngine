@@ -47,6 +47,7 @@ namespace RedGameEngine.World
                 e.Update();
                 player.InteractWith(e);
             });
+            entities.RemoveAll((e) => e.dead);
         }
 
         public void Render(Graphics g)

@@ -18,6 +18,8 @@ namespace RedGameEngine.World
 
         private readonly Brush representingBrush;
 
+        public bool dead;
+
 
         public WorldEntity(WorldManager worldIn = null)
         {
@@ -25,6 +27,7 @@ namespace RedGameEngine.World
             PosX = PosY = 0;
             Width = Height = 20;
             representingBrush = new SolidBrush(GetRepesentingColor());
+            dead = false;
         }
 
         public abstract void Update();

@@ -40,7 +40,7 @@ namespace RedGameEngine.World
         public void InteractWith(WorldEntity e)
         {
             Type t = e.GetType();
-            if(actions[t] != null)
+            if (actions.ContainsKey(e.GetType()))
             {
                 MethodInfo info = actions[t];
                 info.Invoke(this, new object[] { e });

@@ -4,6 +4,7 @@ using System.Windows.Forms;
 using System.Drawing;
 using System.Threading;
  using RedGameEngine.Util;
+using System.Collections.Generic;
 
 namespace RedGameEngine
 {
@@ -20,6 +21,7 @@ namespace RedGameEngine
         private readonly Font fpsFont = new Font("Courier", 20);
 
         private KeyHandler KeyHandler;
+        private Dictionary<TickPriority, List<Action>> ticks;
 
         public void AddEntity(WorldEntity entity)
         {
@@ -28,6 +30,8 @@ namespace RedGameEngine
 
         public GameEngine(Form form, int width=500, int height=500)
         {
+
+ 
             this.Form = form;
             this.Form.FormBorderStyle = FormBorderStyle.Fixed3D;
 
@@ -50,6 +54,14 @@ namespace RedGameEngine
 
             // Add Closing Event
             form.FormClosing += (sender, args) => Stop();
+
+
+
+            ticks = new Dictionary<TickPriority, List<Action>>();
+            foreach(TickPriority t in Enum.GetValues(typeof(TickPriority)))
+            {
+                ticks[t] = new List<Action>();
+            }
         }
 
         public void CreatePlayer(WorldPlayer player)
@@ -71,7 +83,7 @@ namespace RedGameEngine
         public void Stop()
         {
             running = false;
-            //thread.Join();
+            thread.Join();
         }
 
         public void Loop()
@@ -104,18 +116,39 @@ namespace RedGameEngine
             }
         }
 
+        public void AddTickMethod(Action tick, TickPriority priority)
+        {
+            ticks[priority].Add(tick);
+        }
+
         private void Tick()
         {
+            ticks[TickPriority.BEFORE_LOGIC].ForEach((a) => a.Invoke());
+
             worldManager.Tick();
+
+            ticks[TickPriority.BEFORE_INPUT].ForEach((a) => a.Invoke());
+
             KeyHandler.Tick();
+
+            ticks[TickPriority.AFTER_INPUT].ForEach((a) => a.Invoke());
         }
 
         private void Render()
         {
             g.Clear(Form.BackColor);
             worldManager.Render(g);
-            g.DrawString("" + this.fps, fpsFont, Brushes.Black, 100, 100);
-            
+            //g.DrawString("" + this.fps, fpsFont, Brushes.Black, 100, 100);
+            ticks[TickPriority.AFTER_RENDER].ForEach((a) => a.Invoke());
         }
+    }
+
+
+    public enum TickPriority
+    {
+        BEFORE_LOGIC,
+        BEFORE_INPUT,
+        AFTER_INPUT,
+        AFTER_RENDER
     }
 }
