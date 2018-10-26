@@ -1,4 +1,5 @@
 ﻿using RedGameEngine.World;
+using System.Drawing;
 using System.Windows.Forms;
 
 namespace WindowsFormsApp1
@@ -22,11 +23,12 @@ namespace WindowsFormsApp1
             }
             PosY += vy;
         }
+        
 
         [Interaction(type=typeof(MyEntity))]
         public void InteractionWithMyEntity(MyEntity e)
         {
-            
+            if (MathUtils.RectanglesIntersect(PosX, PosY, Width, Height, e.PosX, e.PosY, e.Width, e.Height)) dead = true;
         }
     }
 }

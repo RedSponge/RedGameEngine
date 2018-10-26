@@ -32,7 +32,7 @@ namespace RedGameEngine.World
 
         public abstract void Update();
 
-        public void Render(Graphics g)
+        public virtual void Render(Graphics g)
         {
             g.FillRectangle(representingBrush, PosX, PosY, Width, Height);
         }

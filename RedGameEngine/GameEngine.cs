@@ -83,7 +83,6 @@ namespace RedGameEngine
         public void Stop()
         {
             running = false;
-            thread.Join();
         }
 
         public void Loop()
