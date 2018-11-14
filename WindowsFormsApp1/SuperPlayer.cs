@@ -15,6 +15,7 @@ namespace WindowsFormsApp1
         float vy;
         public override void Update()
         {
+            
             if (dead) return;
             vy += 0.1f;
             if(KeyInput.JustPressed(Keys.Space))

@@ -24,3 +24,14 @@ c:\users\redsponge\source\repos\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\Wind
 c:\users\redsponge\source\repos\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\RedGameEngine.dll
 c:\users\redsponge\source\repos\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\RedGameEngine.pdb
 c:\users\redsponge\source\repos\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\EngineTester.csproj.CopyComplete
+C:\Users\StudentN\Downloads\RedGameEngine\WindowsFormsApp1\bin\Debug\WindowsFormsApp1.exe.config
+C:\Users\StudentN\Downloads\RedGameEngine\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.exe
+C:\Users\StudentN\Downloads\RedGameEngine\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.pdb
+C:\Users\StudentN\Downloads\RedGameEngine\WindowsFormsApp1\bin\Debug\WindowsFormsApp1.exe
+C:\Users\StudentN\Downloads\RedGameEngine\WindowsFormsApp1\bin\Debug\WindowsFormsApp1.pdb
+C:\Users\StudentN\Downloads\RedGameEngine\WindowsFormsApp1\bin\Debug\RedGameEngine.dll
+C:\Users\StudentN\Downloads\RedGameEngine\WindowsFormsApp1\bin\Debug\RedGameEngine.pdb
+C:\Users\StudentN\Downloads\RedGameEngine\WindowsFormsApp1\obj\Debug\EngineTester.csprojResolveAssemblyReference.cache
+C:\Users\StudentN\Downloads\RedGameEngine\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Form1.resources
+C:\Users\StudentN\Downloads\RedGameEngine\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Properties.Resources.resources
+C:\Users\StudentN\Downloads\RedGameEngine\WindowsFormsApp1\obj\Debug\EngineTester.csproj.GenerateResource.Cache

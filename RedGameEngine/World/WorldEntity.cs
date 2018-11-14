@@ -10,7 +10,7 @@ namespace RedGameEngine.World
 {
     public abstract class WorldEntity
     {
-        internal WorldManager WorldIn;
+        public WorldManager WorldIn { get; internal set; }
         public float PosX { protected set; get; }
         public float PosY { protected set; get; }
         public float Width { protected set; get; }

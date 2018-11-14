@@ -10,3 +10,8 @@ c:\users\redsponge\source\repos\WindowsFormsApp1\RedGameEngine\obj\Debug\RedGame
 c:\users\redsponge\source\repos\WindowsFormsApp1\RedGameEngine\obj\Debug\RedGameEngine.csproj.CoreCompileInputs.cache
 c:\users\redsponge\source\repos\WindowsFormsApp1\RedGameEngine\obj\Debug\RedGameEngine.dll
 c:\users\redsponge\source\repos\WindowsFormsApp1\RedGameEngine\obj\Debug\RedGameEngine.pdb
+C:\Users\StudentN\Downloads\RedGameEngine\RedGameEngine\bin\Debug\RedGameEngine.dll
+C:\Users\StudentN\Downloads\RedGameEngine\RedGameEngine\bin\Debug\RedGameEngine.pdb
+C:\Users\StudentN\Downloads\RedGameEngine\RedGameEngine\obj\Debug\RedGameEngine.csprojResolveAssemblyReference.cache
+C:\Users\StudentN\Downloads\RedGameEngine\RedGameEngine\obj\Debug\RedGameEngine.dll
+C:\Users\StudentN\Downloads\RedGameEngine\RedGameEngine\obj\Debug\RedGameEngine.pdb

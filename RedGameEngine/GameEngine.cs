@@ -115,7 +115,7 @@ namespace RedGameEngine
             }
         }
 
-        public void AddTickMethod(Action tick, TickSchedule priority)
+        public void AddTickMethod(Action tick, TickSchedule priority = TickSchedule.AFTER_INPUT)
         {
             ticks[priority].Add(tick);
         }

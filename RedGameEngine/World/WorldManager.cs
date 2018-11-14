@@ -18,8 +18,8 @@ namespace RedGameEngine.World
         public WorldManager(GameEngine engine)
         {
             this.engine = engine;
-            this.player = null;
             this.entities = new List<WorldEntity>();
+            this.player = null;
         }
 
         public void SetPlayer(WorldPlayer player) // A Player.
@@ -58,6 +58,11 @@ namespace RedGameEngine.World
             }
             player.Render(g);
             entities.ForEach(e => e.Render(g));
+        }
+
+        public List<WorldEntity> GetEntities()
+        {
+            return entities;
         }
     }
 }
